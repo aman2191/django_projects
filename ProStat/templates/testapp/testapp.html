@@ -1,0 +1,53 @@
+<!DOCTYPE html> {%load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Aman</h1>
+    <link rel="stylesheet" href="{%static 'css/testapp.css'%}">
+    <img src="{% static 'images/p.jpg' %}" alt="no images">
+
+    <h1>name of employee</h1>
+    <h2>citiies in india {{city}}</h2>
+    <h3>{{animal}}</h3>
+
+
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+
+    <body>
+        <table style="width:100%">
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                {% for s in name %}
+                <td>{{ s.eno}}</td>
+                <td> {{ s.ename }}</td>
+                <td>{{ s.eaddr }}</td>
+
+            </tr>
+            {% endfor %}
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+
+        </table>
+    </body>
+
+</html>

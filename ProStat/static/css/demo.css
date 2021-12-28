@@ -1,0 +1,12 @@
+img {
+    height: 1000px;
+    width: 300px;
+    border: 10px yellow;
+    margin: 0%50%;
+}
+
+h1 {
+    color: yellowgreen;
+    text-align: center;
+    border: tomato;
+}
